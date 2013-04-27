@@ -1,5 +1,6 @@
 fs = require 'fs'
 http = require 'http'
+util = require 'util'
 
 # http://nodejs.org/api/all.json
 NODEJS_API_OPTS =
@@ -8,16 +9,17 @@ NODEJS_API_OPTS =
   path: '/api/all.json'
   method: 'GET'
 
-
 DEFAULT_FILENAME = './NodeAPI_coffee.sublime-completions'
 
 # simple function to download latest json api file and pass it to cb (callback)
 downloadAPI = (cb) ->
-  http.get NODEJS_API_OPTS, (res) ->
-    apistr = ''
+  apistr = ''
+  http.get NODEJS_API_OPTS, (res) =>
     res.on 'data', (data) ->
-      apistr += data.toString('ascii')
+      # console.log data 
+      apistr += data.toString()
     res.on 'end', ->
+      fs.writeFileSync './node_api.json', apistr
       cb JSON.parse(apistr)
 
 # parensType refers to whether you want to include parens around function arguments

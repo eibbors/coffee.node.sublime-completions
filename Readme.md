@@ -7,21 +7,30 @@ A very simple script that can be used to download the latest api.json file from 
 
 Install
 -------
-You may install `Coffee-Nodejs-Completions` via the [Sublime Text 2 package manager](http://wbond.net/sublime_packages/package_control),
-or using git with the below commands:
+It cannot currently be installed via the Sublime Text Package Manager, but you can add it as a repository or use git from the commandline, as follows:
 
 *Linux*
 
     `git clone git://github.com/eibbors/coffee.node.sublime-completions.git
-    ~/.config/sublime-text-2/Packages/Packages/CoffeeScript/Nodejs/`
+    ~/.config/sublime-text-2/Packages/Packages/User/NodeJsAPI/`
+
+    Sublime Text 3:
+    `git clone git://github.com/eibbors/coffee.node.sublime-completions.git
+    ~/.config/sublime-text-3/Packages/Packages/User/NodeJsAPI/`
 
 *Windows*
 
-    `git clone git://github.com/eibbors/coffee.node.sublime-completions.git "%APPDATA%\Sublime Text 2\Packages\CoffeeScript\Nodejs"`
+    `git clone git://github.com/eibbors/coffee.node.sublime-completions.git "%APPDATA%\Sublime Text 2\Packages\User\NodeJsAPI"`
+
+    Sublime Text 3:
+    `git clone git://github.com/eibbors/coffee.node.sublime-completions.git "%APPDATA%\Sublime Text 3\Packages\User\NodeJsAPI"`
 
 *MacOSX*
 
-    `git clone git://github.com/eibbors/coffee.node.sublime-completions.git ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/CoffeeScript/Nodejs/`
+    `git clone git://github.com/eibbors/coffee.node.sublime-completions.git ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User/NodeJsAPI/`
+
+    Sublime Text 3:
+    `git clone git://github.com/eibbors/coffee.node.sublime-completions.git ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/NodeJsAPI/`
 
 Author
 ------
